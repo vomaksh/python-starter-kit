@@ -1,0 +1,13 @@
+version: 2
+
+updates:
+  - package-ecosystem: pip
+    directory: "/template"
+    schedule:
+      interval: daily
+      time: "19:00"
+      timezone: IN
+    groups:
+      python-packages:
+        patterns:
+          - "*"

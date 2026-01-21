@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tooling
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pyrefly_cache/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# env files
+.env
+.env.*
+!.env.example

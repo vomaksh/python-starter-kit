@@ -1,0 +1,13 @@
+_envops:
+  lstrip_blocks: true
+  trim_blocks: true
+  keep_trailing_newline: true
+
+_subdirectory: template
+
+project_name:
+  type: str
+  help: Project name?
+  validate: "{{ value.isalnum() }}"
+  when: not project_name | exists
+  default: my-app
