@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: daily
       time: "19:00"
-      timezone: IN
+      timezone: "Asia/Kolkata"
     groups:
       python-packages:
         patterns:
