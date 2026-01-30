@@ -1,6 +1,8 @@
 {
     "name": "app",
-    "image": "mcr.microsoft.com/devcontainers/python:3.14-trixie",
+    "dockerComposeFile": "compose.yaml",
+    "service": "app",
+    "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": "true",
@@ -17,6 +19,7 @@
         "vscode": {
             "settings": {
                 "python.defaultInterpreterPath": "./.venv/bin/python",
+                "python.REPL.enableREPLSmartSend": false,
                 "[python]": {
                     "editor.defaultFormatter": "charliermarsh.ruff",
                     "editor.formatOnSave": true,
@@ -31,7 +34,8 @@
                 "meta.pyrefly",
                 "tamasfe.even-better-toml",
                 "humao.rest-client",
-                "ms-toolsai.jupyter"
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-containers"
             ]
         }
     }
